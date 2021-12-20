@@ -1,11 +1,10 @@
 {  
   "Post": 
-  {    "title": { "string": {} },    
+  {    "ApplicantName": { "string": {} },
+        "Address": { "string": {} },
+        "State": { "string": {} },
+        "ZIP": {"number": {}},
+        "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" } },
         "comments": {      "hasMany": "Comment"    }  
-  },  
-  "Comment": 
-  {    
-    "body": { "string": {} },    
-    "post": {      "belongsTo": "Post"    }  
   }
 }
