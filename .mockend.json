@@ -3,7 +3,7 @@
   {    "ApplicantName": { "string": {} },
         "Address": { "string": {} },
         "State": { "string": {} },
-        "ZIP": {"int": {}},
+        "ZIP": { "int": { "min": 10001, "max": 99999 } } ,
         "email": { "regexp": "[a-z]{5,10}@[a-z]{5}\\.[a-z]{2,3}" } },
         "comments": {      "hasMany": "Comment"    }  
   }
